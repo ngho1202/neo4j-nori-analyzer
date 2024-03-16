@@ -20,10 +20,6 @@ deploy/import 에 있는 lucene-nori-analysis-9.8.0.jar
             - lucene-backward-codecs
             - lucene-queryparser
                 
-                ![Docker 로 확인한 lucene관련 패키지들](Neo4j%20Nori-Analyzer%20%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%A6%E1%84%89%E1%85%B3%2023b790861bc24c0eb1d496baad1fab31/Untitled.png)
-                
-                Docker 로 확인한 lucene관련 패키지들
-                
 
 ### 2. 파악한 Neo4j와 Lucene 코드 `git clone` 후 필요한 부분만 jar 파일 생성
 (본 repo의 submodule로 neo4j와 lucene을 갖고 있습니다. git submodule init, git submodule update 로 진행하여 주세요)
@@ -35,11 +31,7 @@ deploy/import 에 있는 lucene-nori-analysis-9.8.0.jar
     
     src 폴더를 복사하여 local에 임의의 폴더생성(예시 : nori-analysis-lucene-9.8).
     
-    ![Untitled](Neo4j%20Nori-Analyzer%20%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%A6%E1%84%89%E1%85%B3%2023b790861bc24c0eb1d496baad1fab31/Untitled%201.png)
-    
 3. **`neo4j` repo에서는 아래 경로 폴더를 만들어 그 안에 NoriAnalyzer.java 파일 생성**
-    
-    ![Untitled](Neo4j%20Nori-Analyzer%20%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%A6%E1%84%89%E1%85%B3%2023b790861bc24c0eb1d496baad1fab31/Untitled%202.png)
     
     1. (참고) neo4j 원본 repo의 analyzer/providers 경로
         
@@ -382,7 +374,6 @@ deploy/import 에 있는 lucene-nori-analysis-9.8.0.jar
 
 docker 기준 nori-analysis 는 /import 에 nori-analyzer 는 /plugin 에 추가
 
-![Untitled](Neo4j%20Nori-Analyzer%20%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%84%80%E1%85%B3%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%A6%E1%84%89%E1%85%B3%2023b790861bc24c0eb1d496baad1fab31/Untitled%203.png)
 
 ### 4. Command 실행순서(Neo4j 5.17.0 사용 시 그대로 사용 가능)
 (clone 하지 않고 deploy/plugin 폴더와 deploy/import 폴더 안에 있는 jar파일을 deploy하는 neo4j에 추가하여도 됩니다!)
