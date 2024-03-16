@@ -1,0 +1,10 @@
+# Mac zip files
+**/*.DS_Store
+
+# deploy
+deploy/data/
+deploy/logs/
+
+# mvn clean package -DskipTests
+lucene-nori-analysis-9.8.0/target/
+neo4j-nori-analyzer-5.17.0/target/

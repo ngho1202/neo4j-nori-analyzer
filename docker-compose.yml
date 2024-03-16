@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+
+  neo4j:
+    container_name: neo4j-test
+    hostname: neo4j-test
+    image: neo4j:5.17.0-community
+    ports:
+      - '7687:7687' # Bolt
+      - '7474:7474' # HTTP / Web UI
+    environment:
+      - NEO4J_AUTH=neo4j/password
+      - NEO4J_server.memory.pagecache.size=16G
+      - NEO4J_server.memory.heap.max.size=16G
+    mem_limit: 16g
+    volumes:
+      - ./deploy/neo4j/data:/data
+      - ./deploy/neo4j/logs:/logs
+      - ./deploy/neo4j/import:/var/lib/neo4j/import
+      - ./deploy/neo4j/plugins:/var/lib/neo4j/plugins
