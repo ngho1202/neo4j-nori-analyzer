@@ -1,6 +1,6 @@
 # 정리 Notion URL
-[ENG] https://ngho1202.notion.site/How-to-add-nori-analyzer-tokenizer-on-Neo4j-6528b0617d854ac2a1bba15d821a13da
-[KOR] https://ngho1202.notion.site/Neo4j-nori-analyzer-tokenizer-aa63531439e646fdbda3c9e12ad4c8be?pvs=4
+- [ENG] https://ngho1202.notion.site/How-to-add-nori-analyzer-tokenizer-on-Neo4j-6528b0617d854ac2a1bba15d821a13da
+- [KOR] https://ngho1202.notion.site/Neo4j-nori-analyzer-tokenizer-aa63531439e646fdbda3c9e12ad4c8be?pvs=4
 
 아래 글을 읽지 않고도, Neo4j-5.17.0 버전일 경우
 >deploy/plugins 에 있는 neo4j-nori-analyzer-5.17.0.jar 파일과
